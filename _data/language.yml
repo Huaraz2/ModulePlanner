@@ -1,0 +1,23 @@
+en:
+    name: En
+    year: Year
+    short: en
+    clear: Clear Selected
+    credits: Credits
+    requires: Requires
+    more-info: More info
+    select-deg: Please choose your degree scheme
+    school-name: School of Mathematics
+    credits-chosen: Credits chosen
+
+cy:
+    name: Cy
+    year: test
+    short: cy
+    clear: test testin
+    credits: tesst
+    requires: tests
+    more-info: testss
+    select-deg: testsss
+    school-name: testssss
+    credits-chosen: testsssss
