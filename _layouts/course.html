@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign lang = site.data.language[page.lang] %}
 
 {% for c in site.data.courses %}
   {% if c.short == page.short %}
@@ -14,8 +15,8 @@ layout: default
 
 {% for year in course.modules %}
   <div class="year" id="year{{forloop.index}}">
-    <h1>Year {{forloop.index}}</h1>
-    <h3>Credits chosen: <span class="credit"></span></h3>
+    <h1>{{lang.year}} {{forloop.index}}</h1>
+    <h3>{{lang.credits-chosen}}: <span class="credit"></span></h3>
 
     <div class="core">
     {% for code in year.core %}

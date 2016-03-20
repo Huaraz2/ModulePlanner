@@ -1,21 +1,36 @@
+{% assign lang = site.data.language[page.lang] %}
+
 <header class="site-header">
     <div class="group">
 
         <a class="site-title" href="{{ site.baseurl }}/">Change your degree</a>
 
         <aside>
-            <p>Theme:
-            <select id="theme-chooser">
-                {% for theme in site.data.themes %}
-                <option value="{{theme.shortname}}">{{theme.name}}</option>
-                {% endfor %}
-            </select></p>
-        </aside>
+            <p>
+                <span class="theme">
+                    Theme:
+                    <select id="theme-chooser">
+                        {% for theme in site.data.themes %}
+                            <option value="{{theme.shortname}}">{{theme.name}}</option>
+                        {% endfor %}
+                    </select>
+                </span>
 
+                <span class="language">
+                    Language:
+                    <select id="lang-chooser">
+                        {% for language in site.data.language %}
+                            {% assign langu = language[1] %}
+                            <option value="{{langu.short}}">{{langu.name}}</option>
+                        {% endfor %}
+                    </select>
+                </span>
+            </p>
+        </aside>
     </div>
 
     <div class="wrapper">
         <h1>{{course.name}}</h1>
-        <h2 class="clear">Clear Selected</h2>
+        <h2 class="clear">{{lang.clear}}</h2>
     </div>
 </header>
