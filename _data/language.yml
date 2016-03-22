@@ -2,7 +2,7 @@ en:
     name: En
     year: Year
     short: en
-    clear: Clear Selected
+    reset: Clear Selected
     credits: Credits
     requires: Requires
     more-info: More info
@@ -15,7 +15,7 @@ cy:
     name: Cy
     year: Blwyddyn
     short: cy
-    clear:  Clirio dewisiadau
+    reset:  Clirio dewisiadau
     credits: Credydau
     requires: modiwlau ofynnol
     more-info: Mwy o wybodaeth
