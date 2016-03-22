@@ -1,0 +1,25 @@
+en:
+    name: En
+    year: Year
+    short: en
+    reset: Clear Selected
+    credits: Credits
+    requires: Requires
+    more-info: More info
+    select-deg: Please choose your degree scheme
+    change-deg: Change your degree scheme
+    school-name: School of Mathematics
+    credits-chosen: Credits chosen
+
+cy:
+    name: Cy
+    year: Blwyddyn
+    short: cy
+    reset:  Clirio dewisiadau
+    credits: Credydau
+    requires: modiwlau ofynnol
+    more-info: Mwy o wybodaeth
+    select-deg: Dewiswch eich cynllun gradd os gwelwch yn dda
+    change-deg: Newidwch eich cynllun gradd
+    school-name: Yr Ysgol Fathemateg
+    credits-chosen: Credydau a ddewiswyd

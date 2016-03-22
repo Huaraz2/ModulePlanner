@@ -38,7 +38,7 @@ $(document).ready(function() {
         // Assume that we can choose the module for now
         var available = true;
 
-         // If the list of requirements exist
+        // If the list of requirements exist
         if ($(selector).children().length) {
 
             // For each item in the list,
@@ -86,7 +86,7 @@ $(document).ready(function() {
             updateYearlyTotal(module, false);
 
         } else { // Otherwise try selecting the module
-            
+
 
             // First check to see if the requirements are satisfied
             if (checkRequires(code)) {
@@ -112,13 +112,13 @@ $(document).ready(function() {
 
             // This selects the credit counter for the current year
             var counter = "div.year#" + year + " > h3 > span.credit";
-            
+
             // Get the number of credits to update the page with
             var value = totals[year];
 
             // Update counter text
             $(counter).text(totals[year]);
-            
+
             // If above the threshold warn the user
             if (value > 120 ) {
 
@@ -131,7 +131,7 @@ $(document).ready(function() {
                 }
             }
 
-            
+
             if (value <= 120) {
 
                 if ($(counter).hasClass("warn")) {
@@ -150,7 +150,7 @@ $(document).ready(function() {
     //      - module: The selection string for the module you are (de)selecting
     //      - inc:    A bool, true for selection, false for deselection
     var updateYearlyTotal = function(module, inc) {
-        
+
         // Extract the number of credits it's worth
         var numCredits = $(module + " > div.group > aside > span.credit").text();
         //console.log("Num credits: " + numCredits);

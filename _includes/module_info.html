@@ -13,12 +13,14 @@
 
 {% endfor %}
 
+{% assign lang = site.data.language[page.lang] %}
+
 <h2>{{module.name}}</h2>
 <h3>{{module.code | upcase}}</h3>
 <div class="group">
-    <a href="https://handbooks.data.cardiff.ac.uk/module/{{module.more-info}}.html" target="_blank">More info</a>
+    <a href="https://handbooks.data.cardiff.ac.uk/module/{{module.more-info}}.html" target="_blank">{{lang.more-info}}</a>
 
-    <aside>Credits:<span class="credit">{{module.credits}}</span></aside>
+    <aside>{{lang.credits}}:<span class="credit">{{module.credits}}</span></aside>
 </div>
 
 {% if provides %}
@@ -33,7 +35,7 @@
 {% endif %}
 
 {% if module.requires %}
-<p class="requires">Requires</p>
+<p class="requires">{{lang.requires}}</p>
 <ul class="requires">
   {% for c in module.requires %}
     {% for m in site.data.modules %}
