@@ -10,7 +10,7 @@ database.  Degree scheme infomation is kept in the :code:`courses.yml` file in
 the :code:`_data` folder. Like we did when we added modules there are several
 peices of infomation that we need before we can add a scheme:
 
-* Degree short
+* The national code for the degree (the UCAS code in the UK)
 * Name of the degree
 * Module codes for the 1 :sup:`st` year core and/or option modules
 * Module codes for the 2 :sup:`nd` year core and/or option modules
@@ -19,8 +19,8 @@ peices of infomation that we need before we can add a scheme:
 Example degree
 ===================
 
-The degree that I am going to add is called BSc Mathematics and has the short
-bsc.  This degree is three years long, and consits of the following module
+The degree that I am going to add is called BSc Mathematics and has the degree
+code G100.  This degree is three years long, and consits of the following module
 codes:
 
 * 1 :sup:`st` year core: ma1001, ma1004, ma1005, ma1007, ma1500, ma1006, ma1003
@@ -31,7 +31,7 @@ codes:
 
 This is what you write in courses.yml::
 
-	- short: bsc
+	- degree-code: G100
 	  name: BSc Mathematics
 	  modules:
 		  - core: ['ma1001', 'ma1004', 'ma1005', 'ma1007', 'ma1500', 'ma1006', 'ma1003']
@@ -50,13 +50,13 @@ orignal repository for this we have two languages- Welsh and English therefore
 we have two folders called :code:`cy` and :code:`en` respectivly that hold the
 html files for the degrees).
 
-In the bsc.html file in en folder you would write::
+In the G100.html file in en folder you would write::
 
 	---
 	layout: course
-	short: bsc
+	degree-code: G100
 	lang: en
 	---
 
-In the bsc.html file in the cy folder  the only difference would be that you
+In the G100.html file in the cy folder the only difference would be that you
 write :code:`lang: cy` instead.
