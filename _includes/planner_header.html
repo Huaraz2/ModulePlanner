@@ -1,5 +1,5 @@
 {% for l in site.data.language %}
-     {% if page.lang == l.short %}
+     {% if page.lang == l.language-code %}
           {% assign lang = l %}
      {% endif %}
 {% endfor %}
@@ -7,7 +7,7 @@
 <header class="site-header">
     <div class="group">
 
-        <a class="site-title" href="{{ site.baseurl }}/{{lang.short}}/index.html">{{lang.change-deg}}</a>
+        <a class="site-title" href="{{ site.baseurl }}/{{lang.language-code}}/index.html">{{lang.change-deg}}</a>
 
         <aside>
             <p>
@@ -15,7 +15,7 @@
                     {{lang.theme}}:
                     <select id="theme-chooser">
                         {% for theme in site.data.themes %}
-                            <option value="{{theme.shortname}}">{{theme.name}}</option>
+                            <option value="{{theme.filename}}">{{theme.name}}</option>
                         {% endfor %}
                     </select>
                 </span>
@@ -24,7 +24,7 @@
                     {{lang.language}}:
                     <select id="lang-chooser">
                         {% for langu in site.data.language %}
-                            <option value="{{langu.short}}">{{langu.name}}</option>
+                            <option value="{{langu.language-code}}">{{langu.name}}</option>
                         {% endfor %}
                     </select>
                 </span>

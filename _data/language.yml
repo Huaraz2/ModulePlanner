@@ -2,7 +2,6 @@
   year: Year
   here: here
   theme: Theme
-  short: en
   reset: Clear Selected
   credits: Credits
   language: Language
@@ -11,16 +10,15 @@
   select-deg: Please choose your degree
   change-deg: Change your degree scheme
   school-name: School of Mathematics
+  language-code: en
   credits-chosen: Credits chosen
   disclaimer: As this is maintainted by students, the infomation may not be completely correct.
-  free1: This is only the standard modules you can take during your degree, please click
-  free2: to see all the possible modules for your degree.
+  more-options: This is only the standard modules you can take during your degree, to see all the possible modules for your degree please click
 
 - name: Cy
   year: Blwyddyn
   here: yma
   theme: Thema
-  short: cy
   reset:  Clirio dewisiadau
   credits: Credydau
   language: iaith
@@ -29,7 +27,7 @@
   select-deg: Dewiswch eich cynllun gradd os gwelwch yn dda
   change-deg: Newidwch eich cynllun gradd
   school-name: Yr Ysgol Fathemateg
+  language-code: cy
   credits-chosen: Credydau a ddewiswyd
   disclaimer: Gan fod hyn yn cael ei maintainted gan fyfyrwyr, efallai na fydd y infomation fod yn gwbl gywir.
-  free1: Mae hyn yn dim ond y modiwlau safonol y gallwch eu cymryd yn ystod eich gradd, cliciwch
-  free2: i weld yr holl fodiwlau posibl ar gyfer eich gradd.
+  more-options: Mae hyn yn dim ond y modiwlau safonol y gallwch eu cymryd yn ystod eich gradd, i weld yr holl fodiwlau posibl ar gyfer eich gradd cliciwch

@@ -1,4 +1,4 @@
-- short: bsc
+- degree-code: G100
   name: BSc Mathematics
   modules:
       - core: ['ma1001', 'ma1004', 'ma1005', 'ma1007', 'ma1500', 'ma1006', 'ma1003']
@@ -9,7 +9,7 @@
 
       - optional: ['ma0332', 'ma0358', 'ma0391', 'ma0392', 'ma3000', 'ma0367',	 'ma3003', 'ma3004', 'ma0322', 'ma3501', 'ma3700', 'ma3006', 'ma3301', 'ma3005', 'ma3502', 'ma3503', 'ma3303', 'ma3304', 'ma3900', 'ma3505', 'ma3504', 'ma3602', 'ma3601', 'ma3901', 'cm3201', 'cm3111']
 
-- short: mors
+- degree-code: G991
   name: Mathematics, Operational Research and Statistics
   modules:
       - core: ['ma1001', 'ma1004', 'ma1005', 'ma1007', 'ma1500', 'ma1006', 'ma1003', 'ma1501']
@@ -20,7 +20,7 @@
 
       - optional: ['ma0358', 'ma0391', 'ma0392', 'ma3000', 'ma0367', 'ma3003', 'ma3004', 'ma3700', 'ma3501', 'ma0322', 'ma3006', 'ma3301', 'ma3502', 'ma3503', 'ma3304', 'ma3900', 'ma3505', 'ma3504', 'ma3602', 'ma3601', 'ma3901', 'ma3303']
 
-- short: mapps
+- degree-code: G120
   name: Mathematics and its Applications
   modules:
       - core: ['ma1001', 'ma1004', 'ma1500', 'ma1005', 'ma1007', 'ma1006', 'ma1003']
@@ -31,7 +31,7 @@
 
       - optional: ['ma0332', 'ma0358', 'ma0391', 'ma0392', 'ma3000', 'ma0367', 'ma3003', 'ma3004', 'ma3700', 'ma3501', 'ma0322', 'ma3006', 'ma3301', 'ma3005', 'ma3502', 'ma3503', 'ma3303', 'ma3304', 'ma3900', 'cm3201', 'ma3505', 'ma3504', 'ma3602', 'ma3601', 'ma3901', 'cm3111']
 
-- short: mmath
+- degree-code: G101
   name: MMath Mathematics
   modules:
      - core: ['ma1004', 'ma1001', 'ma1500', 'ma0111', 'ma1005', 'ma1007', 'ma1006', 'ma1003']

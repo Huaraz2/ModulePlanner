@@ -13,24 +13,24 @@ $(document).ready(function () {
     //             - Updating the footer text
     //             - Updating the dropdown selection
     //             - If the facility is available, saving the user preference
-    var changeTheme = function(shortname) {
+    var changeTheme = function(filename) {
 
         // Change the stylesheet
-        $(stylesheet).attr("href", "/css/" + shortname + ".css");
+        $(stylesheet).attr("href", "/css/" + filename + ".css");
 
         // Hide all theme details
         $(themenames).hide();
 
         // Unhide the relevant theme
-        $(themenames + "#" + shortname).show();
+        $(themenames + "#" + filename).show();
 
         // Update the dropdown
-        $(themechooser).val(shortname);
+        $(themechooser).val(filename);
 
 	    // If local storage is available, save the theme so the change
 	    // is persistent both accross page loads and entire sessions
 	    if (typeof(Storage) !== undefined) {
-            localStorage.setItem("theme", shortname);
+            localStorage.setItem("theme", filename);
 	    }
     };
 

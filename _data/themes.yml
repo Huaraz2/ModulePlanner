@@ -1,5 +1,5 @@
 - name: Dark
-  shortname: dark
+  filename: dark
 
 - name: Light
-  shortname: light
+  filename: light
