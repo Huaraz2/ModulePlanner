@@ -3,7 +3,7 @@ sequence:
   - type: map
     required: yes
     mapping:
-      "short":
+      "degree-code":
         type: str
         required: yes
       "name":
@@ -27,4 +27,3 @@ sequence:
                 sequence:
                   - type: str
                     pattern: "/[a-z]{2}[0-9]{4}/"
-
