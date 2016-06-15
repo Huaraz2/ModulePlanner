@@ -3,26 +3,31 @@
 
 @charset "utf-8";
 
-// Some common colours
+// Some common colours - DON'T CHANGE THESE
+$red: #ff0000;
+$blue: #0000ff;
+$green: #00ff00;
 $black: #000000;
 $white: #ffffff;
+
+// Colours that you can change
 $link: $white;
-$cardiff-dark: #990000;
-$cardiff-bright: #ff0000;
-$cardiff-complement: #111;
-$red-warn: #ff0000;
-$green-ok: #00cc00;
-$hover: #00cc00;
-$option-slected: #ff0000;
-$clear: #990000;
-$degree: #990000;
+$core-module: #990000;
+$headings: $red;
+$optional-selected: $red;
+$option-slected-text: $red;
+$red-warn: $red;
+$green-ok: $green;
+$degree: $core-module;
+$hover: $green;
+$clear: $core-module;
 
 // Text
 $fonts: Arial, Helvetica, sans-serif;
 $title-font-size: 36px;
 $module-font-size: 18px;
 $text-color: $white;
-$text-shadow-style: 1px 1px #000000;
+$text-shadow-style: 1px 1px $black;
 
 // Backgrounds
 $bg-d: #111;
@@ -32,17 +37,10 @@ $middle-bg: #222;
 
 // Other fancy stuff
 $corner-radius: 10px;
-$shadow-style: 5px 5px 3px #000000;
+$shadow-style: 5px 5px 3px $black;
 $inset-shadow-style: inset $shadow-style;
-$menu-border-style: 1px solid #ff0000;
+$menu-border-style: 1px solid $red;
 
-$code-border-style: solid 1px $white ;
-
-@mixin box-style($bg-color) {
-    padding: 20px;
-    background-color: $bg-color;
-    @include box-shadow($shadow-style);
-}
 
 @import "_layout",
         "_mixins",

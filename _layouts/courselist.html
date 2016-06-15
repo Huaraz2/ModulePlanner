@@ -2,7 +2,7 @@
 layout: default
 ---
 {% for l in site.data.language %}
-     {% if page.lang == l.short %}
+     {% if page.lang == l.language-code %}
           {% assign lang = l %}
      {% endif %}
 {% endfor %}
@@ -11,14 +11,14 @@ layout: default
         {{lang.theme}}:
         <select id="theme-chooser">
             {% for theme in site.data.themes %}
-                <option value="{{theme.shortname}}">{{theme.name}}</option>
+                <option value="{{theme.filename}}">{{theme.name}}</option>
             {% endfor %}
         </select>
 
         {{lang.language}}:
         <select id="lang-chooser">
             {% for langu in site.data.language %}
-                <option value="{{langu.short}}">{{langu.name}}</option>
+                <option value="{{langu.language-code}}">{{langu.name}}</option>
             {% endfor %}
         </select>
 </div>
@@ -34,11 +34,11 @@ layout: default
     {% for course in site.data.courses %}
 
        <div class="course">
-          <a href="{{site.baseurl}}/{{lang.short}}/{{course.short}}.html"><h2>{{course.name}}</h2></a>
+          <a href="{{site.baseurl}}/{{lang.language-code}}/{{course.degree-code}}.html"><h2>{{course.name}}</h2></a>
        </div>
 
     {% endfor %}
 
     <h2>{{lang.disclaimer}}</h2>
-    <p>{{lang.free1}} <a href="{{site.data.settings.free}}" target="_blank">{{lang.here}}</a> {{lang.free2}}</p>
+    <p>{{lang.more-options}} <a href="{{site.data.settings.more-options}}" target="_blank">{{lang.here}}</a>.</p>
 </div>

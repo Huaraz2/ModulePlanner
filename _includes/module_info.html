@@ -14,7 +14,7 @@
 {% endfor %}
 
 {% for l in site.data.language %}
-     {% if page.lang == l.short %}
+     {% if page.lang == l.language-code %}
           {% assign lang = l %}
      {% endif %}
 {% endfor %}
@@ -22,7 +22,7 @@
 <h2>{{module.name}}</h2>
 <h3>{{module.code | upcase}}</h3>
 <div class="group">
-    <a href="{{site.data.settings.info}}/{{module.code | upcase}}.html" target="_blank">{{lang.more-info}}</a>
+    <a href="{{site.data.settings.module-catalogue}}/{{module.code | upcase}}.html" target="_blank">{{lang.more-info}}</a>
 
     <aside>{{lang.credits}}:<span class="credit">{{module.credits}}</span></aside>
 </div>

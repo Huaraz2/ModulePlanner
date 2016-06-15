@@ -38,7 +38,7 @@ class ValidateCoursePage < ::HTMLProofer::Check
     @settings = YAML.load_file(File.expand_path('../../_data/settings.yml', __FILE__))
   end
 
-  # Extract all the course shortnames from the database
+  # Extract all the course filenames from the database
   def loadCourseNames
     names = @courses.map { |c| c["short"] }
     return names

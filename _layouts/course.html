@@ -2,13 +2,13 @@
 layout: default
 ---
 {% for l in site.data.language %}
-     {% if page.lang == l.short %}
+     {% if page.lang == l.language-code %}
           {% assign lang = l %}
      {% endif %}
 {% endfor %}
 
 {% for c in site.data.courses %}
-  {% if c.short == page.short %}
+  {% if c.degree-code == page.degree-code %}
     {% assign course = c %}
   {% endif %}
 {% endfor %}

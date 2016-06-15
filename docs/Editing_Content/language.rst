@@ -13,17 +13,16 @@ following words/phrases:
 * Year
 * here
 * Theme
-* Clear Selected
 * Credits
 * Language
 * Requires
 * More info
+* Clear Selected
+* Credits chosen
 * Please choose your degree
 * Change your degree scheme
-* Credits chosen
+* This is only the standard modules you can take during your degree, to see all the possible modules for your degree please click
 * As this is maintainted by students, the infomation may not be completely correct.
-* This is only the standard modules you can take during your degree, please click
-* to see all the possible modules for your degree.
 
 You also need the international language code (see `Language-codes
 <http://www.sitepoint.com/web-foundations/iso-2-letter-language-codes/>`_
@@ -48,9 +47,8 @@ words/phrases are:
 * Por favor elija su grado
 * Cambiar su esquema de grado
 * Créditos elegidos
+* Esto es sólo los módulos estándar que puede tomar durante su grado, para ver todos los posibles módulos para obtener su título por favor haga clic
 * Como esto se maintainted por los estudiantes, la infomación puede no ser del todo correcta.
-* Esto es sólo consta de los módulos estándar que puede tomar durante su grado, por favor haga clic
-* para ver todos los posibles módulos para su grado.
 
 This is what you write in language.yml::
 
@@ -58,7 +56,6 @@ This is what you write in language.yml::
 	  year: Año
 	  here: aquí
 	  theme: Tema
-	  short: es
 	  reset: Claro Seleccionada
 	  credits: Crédito
 	  language: Idioma
@@ -67,10 +64,10 @@ This is what you write in language.yml::
 	  select-deg: Por favor elija su grado
 	  change-deg: Cambiar su esquema de grado
 	  school-name: Escuela de Matemáticas
+	  language-code: es
 	  credits-chosen: Créditos elegidos
+	  more-options: Esto es sólo los módulos estándar que puede tomar durante su grado, para ver todos los posibles módulos para obtener su título por favor haga clic
 	  disclaimer: Como esto se maintainted por los estudiantes, la infomación puede no ser del todo correcta.
-	  free1: Esto es sólo los módulos estándar que puede tomar durante su grado, por favor haga clic
-	  free2: para ver todos los posibles módulos para su grado.
 
 And you would finally create a folder in the base directory called :code:`es`
 where you will put the spanish version of the degree html files.
