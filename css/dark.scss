@@ -41,12 +41,6 @@ $shadow-style: 5px 5px 3px $black;
 $inset-shadow-style: inset $shadow-style;
 $menu-border-style: 1px solid $red;
 
-// DON'T CHANGE THIS
-@mixin box-style($bg-color) {
-    padding: 20px;
-    background-color: $bg-color;
-    @include box-shadow($shadow-style);
-}
 
 @import "_layout",
         "_mixins",

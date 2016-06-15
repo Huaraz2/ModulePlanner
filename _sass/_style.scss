@@ -35,6 +35,12 @@ header.site-header {
     }
 }
 
+@mixin box-style($bg-color) {
+    padding: 20px;
+    background-color: $bg-color;
+    @include box-shadow($shadow-style);
+}
+
 div.wrapper {
     align-items: baseline;
 
